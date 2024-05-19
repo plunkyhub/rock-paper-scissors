@@ -11,3 +11,11 @@ h1, h2 {
     padding: 10px 0 10px 0;
     font-size: 110%;
 }
+.appContiner {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid #2a2727;
+    border-radius: 10px;
+    margin: 20px 5% 20px 5%;
+}
