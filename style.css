@@ -19,3 +19,7 @@ h1, h2 {
     border-radius: 10px;
     margin: 20px 5% 20px 5%;
 }
+.puntuacionContiner, .eleccionContiner {
+    display: flex;
+    justify-content: center;
+}
