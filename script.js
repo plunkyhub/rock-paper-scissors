@@ -12,6 +12,9 @@ const jugadorPuntos = document.querySelector("#jugadorPuntos");
 jugadorPuntos.textContent = 0;
 const pcPuntos = document.querySelector("#pcPuntos");
 pcPuntos.textContent = 0;
+// crear variables para llevar la puntuacion del jugador y la cumputadora
+let player = 0;
+let computer = 0;
 //crear funcion de opcion que devolvera la computadora.
 const getComputerChoice = () => {
   if (Math.floor(Math.random() * 3) === 1) {
