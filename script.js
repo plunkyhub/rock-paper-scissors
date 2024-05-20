@@ -73,3 +73,13 @@ if (playerSelection === computerSelection) {
     pcPuntos.textContent = computer;
 }
 };
+//crear una funcion play para jugar 5 rondas y asignar pintuacion a player o a computer segun quien gane.
+
+const game = (play) => {
+    playRound(play, getComputerChoice());
+    if (player == 5) {
+        empate.innerHTML = '<a href="index.html">Ganaste!. Jugar Otra Vez?\n Click Aqui</a>';
+    } else if (computer == 5) {
+        empate.innerHTML = '<a href="index.html">Perdiste. Jugar Otra Vez?\n Click Aqui</a>';
+    }
+}
