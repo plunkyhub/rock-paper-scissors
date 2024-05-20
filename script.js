@@ -22,3 +22,54 @@ const getComputerChoice = () => {
     return "tijera";
     }
 };
+// Crear funcion playRound para comparar la desicion de player contra computer y asignar puntuacion al ganador
+const playRound = (playerSelection, computerSelection) => {
+playerSelection.toLowerCase();
+if (playerSelection === computerSelection) {
+    jugadorPuntos.textContent = player;
+    pcPuntos.textContent = computer;
+    empate.textContent = "Igual";
+    if (computerSelection == "piedra") {
+        eleccionJugador.textContent = piedra.textContent; //aqui se le asigna el texto de la tijera
+        eleccionPc.textContent = piedra.textContent;
+    } else if (computerSelection == "papel") {
+        eleccionJugador.textContent = papel.textContent; //aqui se le asigna el texto de la tijera
+        eleccionPc.textContent = papel.textContent;
+    } else if (computerSelection == "tijera") {
+        eleccionJugador.textContent = tijera.textContent; //aqui se le asigna el texto de la tijera
+        eleccionPc.textContent = tijera.textContent;
+    }
+    } else if (playerSelection === "tijera" && computerSelection === "papel") {
+    player++;
+    jugadorPuntos.textContent = player;
+    eleccionJugador.textContent = tijera.textContent;
+    eleccionPc.textContent = papel.textContent;
+    empate.textContent = "";
+    } else if (playerSelection === "papel" && computerSelection === "piedra") {
+    player++;
+    jugadorPuntos.textContent = player;
+    eleccionJugador.textContent = papel.textContent;
+    eleccionPc.textContent = piedra.textContent;
+    empate.textContent = "";
+    } else if (playerSelection === "piedra" && computerSelection === "tijera") {
+    player++;
+    jugadorPuntos.textContent = player;
+    eleccionJugador.textContent = piedra.textContent;
+    eleccionPc.textContent = tijera.textContent;
+    empate.textContent = "";
+    } else {
+    empate.textContent = "";
+    if (computerSelection == "piedra") {
+        eleccionJugador.textContent = tijera.textContent; //aqui se le asigna el texto de la tijera
+        eleccionPc.textContent = piedra.textContent;
+    } else if (computerSelection == "papel") {
+        eleccionJugador.textContent = piedra.textContent; //aqui se le asigna el texto de la tijera
+        eleccionPc.textContent = papel.textContent;
+    } else if (computerSelection == "tijera") {
+        eleccionJugador.textContent = papel.textContent; //aqui se le asigna el texto de la tijera
+        eleccionPc.textContent = tijera.textContent;
+    }
+    computer++;
+    pcPuntos.textContent = computer;
+}
+};
